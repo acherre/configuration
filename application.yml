@@ -1,0 +1,14 @@
+##secuity
+#security.basic.enabled: false
+management.security.enabled: true
+
+
+#all service with spring-cloud-starter-bus-amqp dependency 
+#used in order to broadcast conf refresh for exemple...
+spring:
+  rabbitmq:
+    #host: https://www.cloudamqp.com/
+    host: localhost
+    port: 5672
+    username: guest
+    password: '{cipher}AgCEf+B3JFKlDM5PT/52JKJHfFLRh4qnU8ZRUpl89TmFePkjZr+N3bCk6iayTBtfK87B5B3p9Yd71uRyB+5lSG+xoLdm1ewuAbz7arX4BCLZ22+QCTAVxJZ2BZkz3d0BrZb9tGPL9l1Fe9t2EseoYYVg39YdG6kOBIh7n5EDfMY3LOuvcDmXh522UKmVsQepvcsJbgTxTibXxUe+6J4BluXdoWr1u4WP16NKaQD8DZhxzorbW85yx6zN5cs4n7c6iGOdsSRvxOCOMeiC+Om/adtq4J/WOEUulPd9QXxFUFJrCkQkjgf1ZRSVV2wqKmE305J9/81uHgcP+re7ig+066lAQdCAvQqXJpoK6E/Lo7a7B7944z+AIX6+e9AZQAQIvDQ0+M3JRLOgATEDhJbqNPHK7tGIqlxrX7HRNAEzgtQMTuoQcUADX9o4Ua0caeIKHfdsfHpfGwbM9FGWPLl+OS3d2TmBk3SQ0mympLUBkbcqnUsZKN0FxHKVny/vDOexsLt8f7Ezc+NrAd9/cwdOula73ARk/PPD3yIPjUsM/TnCq4RdMxdfbVYQm2Bxy/Zt86CLGSOLbsXuuI/bHfdrhqwy8Osp2INTNx4khuiFMyeSHEtLz11sS+Srs1ax11MI3jBBsQvvC617c1kpueV+OjJqZn36GTbJYwGfAaxP5no/gFwN0JXq1gfyFtNWtqJva+yJwdbMWQo0QCgOPOoS1JfK'
