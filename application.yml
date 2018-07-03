@@ -5,7 +5,7 @@
 test.global.property: global properties 1
 
 #eureka
-eureka.client.healthcheck.enabled: true
+#eureka.client.healthcheck.enabled: true
 
 #all service with spring-cloud-starter-bus-amqp dependency 
 #used in order to broadcast conf refresh for exemple...
