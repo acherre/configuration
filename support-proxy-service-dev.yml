@@ -1,0 +1,16 @@
+test.proxy.property: proxy properties 5 dev local1
+
+#define route allowed
+zuul:
+  #prefix: /api
+  ignoredServices: "*"
+  routes:
+    #redirect request /profile to core-network-profile-service -> htt://hostproxy:9999/networkprofile/ -> htt://core-network-profile-service/networkprofile 
+    network-unicien-service: 
+      path: /networkprofile/**
+      serviceId: core-network-profile-service2
+    crm-unicien-service:
+      path: /crmunicien/**
+      serviceId: core-crm-unicien-service
+      #retryable: true
+  retryable: true
